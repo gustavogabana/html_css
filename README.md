@@ -16,3 +16,18 @@ A URL é feita de partes:
     - GTLD: É o TLD, porém genérico, algum nome fora dos escopos comuns.
     - CCTLD: CC significa country code, por exemplo: .com.br, .com.it, .com.pt, etc.
     - Caminho/rota: É o que vem depois da / na URL. É definida pelo site/software.
+
+## Exemplo de display flex para justificar (linha) e alinhar (altura)
+
+```css
+button {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    height: 50px;
+}
+```
+
+## Text align vs display flex
+
+Text align mexe no fluxo do texto, enquanto o display flex mexe na estrutura da caixa do elemento.

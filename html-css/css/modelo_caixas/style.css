@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: Inter, sans-serif;
+}
+
+h1 {
+    background-color: #fd9797;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    border: 10px;
+    border-color: #97fde7;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1 > div {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border: 5px;
+    border-color: #97fde7;
+    border-style: solid;
+}
+
+p {
+    text-align: center;
+}
