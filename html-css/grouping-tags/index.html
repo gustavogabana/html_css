@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font: Inter, sans-serif;
+        }
+
+        header {
+            height: 150px;
+            background-color: #ff9d9d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: #ff9d9d;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos"></section>
+
+        <section id="noticias">
+            <article>
+                <h2>Noticia de hoje</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, doloribus! Eum facilis beatae eligendi, culpa eveniet cupiditate impedit. Deleniti cupiditate numquam ducimus eos doloremque nemo eaque nesciunt necessitatibus eum nostrum!
+                </p>
+                <aside>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sunt quis, itaque amet odio magnam, et hic voluptas quia corrupti sit. Consectetur, nam. Ipsam earum architecto, ducimus mollitia ipsa incidunt.
+                    </p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por mim mesmo</p>
+    </footer>
+</body>
+</html>
