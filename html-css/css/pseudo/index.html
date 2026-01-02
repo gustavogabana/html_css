@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap" rel="stylesheet">
+    <title>Pseudo Classes e Pseudo Elementos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font: Inter, sans-serif;
+        }
+        div {
+            display: inline-block;
+            background-color: #ff808b;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover {
+            background-color: #80dbff;
+            border: none;
+        }
+        div::after {
+            content: " [eu sou um pseudo elemento]";
+        }
+    </style>
+</head>
+<body>
+    <p>Pseudo Classes são relacionados ao estado de um elemento</p>
+    <div id="1">01</div>
+    <div id="2">02</div>
+    <div id="3">03</div>
+    <p>Pseudo Elementos são relacionados ao elementos existentes e servem para estilização</p>
+    <p>Exemplo: ::after para colocar um content depois de um elemento.</p>
+</body>
+</html>
