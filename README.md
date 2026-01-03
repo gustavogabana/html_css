@@ -31,3 +31,55 @@ button {
 ## Text align vs display flex
 
 Text align mexe no fluxo do texto, enquanto o display flex mexe na estrutura da caixa do elemento.
+
+## Box-shadow
+
+```css
+/* box-shadow: [eixo X] [eixo Y] [desfoque] [espalhamento] [cor];*/
+.meu-elemento {
+    box-shadow: 
+        2px   /* Desloca a sombra 2px para a DIREITA */
+        2px   /* Desloca a sombra 2px para BAIXO */
+        7px   /* Blur (desfoque): deixa a borda da sombra suave/esfumaçada */
+        7px   /* Spread (espalhamento): aumenta o tamanho da sombra em todas as direções */
+        black; /* Cor da sombra */
+}
+```
+
+## Variaveis no CSS
+
+```css
+:root {
+    /* Definição das cores e tamanhos padrão */
+    --cor-primaria: #2980b9;
+    --largura-sidebar: 250px;
+    --tamanho-fonte: 16px;
+}
+
+.sidebar {
+    width: var(--largura-sidebar);
+    background-color: var(--cor-primaria);
+}
+```
+
+## Responseividade no CSS
+
+```css
+:root {
+    --largura-sidebar: 250px;
+    --padding-container: 40px;
+}
+
+/* Quando a tela for menor que 768px (Tablet/Celular) */
+@media (max-width: 768px) {
+    :root {
+        --largura-sidebar: 80px; /* A sidebar encolhe automaticamente */
+        --padding-container: 15px; /* Os espaços internos diminuem */
+    }
+}
+
+.sidebar {
+    width: var(--largura-sidebar);
+    transition: width 0.3s; /* Animação suave na mudança */
+}
+```
