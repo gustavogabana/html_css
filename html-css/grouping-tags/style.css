@@ -1,6 +1,6 @@
 /* 1. DEFINIÇÃO DE VARIÁVEIS */
 :root {
-    --cor-principal: #ff9d9d;
+    --cor-principal: #0e1e33; /* #ff9d9d */
     --cor-texto: white;
     --cor-sombra: rgba(0, 0, 0, 0.3);
     --altura-header: 150px;
