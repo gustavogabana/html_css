@@ -1,0 +1,77 @@
+/* 1. DEFINIÇÃO DE VARIÁVEIS */
+:root {
+    --cor-principal: #ff9d9d;
+    --cor-texto: white;
+    --cor-sombra: rgba(0, 0, 0, 0.3);
+    --altura-header: 150px;
+    --padding-padrao: 20px;
+    --gap-padrao: 15px;
+}
+
+/* 2. MEDIA QUERY PARA TELAS PEQUENAS (Responsividade) */
+@media (max-width: 600px) {
+    :root {
+        --altura-header: 100px; /* Reduz o cabeçalho no celular */
+        --padding-padrao: 10px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    height: var(--altura-header); /* Usa a variável */
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: height 0.3s; /* Transição suave ao mudar de tamanho */
+}
+
+nav a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-padrao);
+    gap: var(--gap-padrao);
+    min-height: 80vh; /* Garante que o main ocupe a maior parte da tela */
+}
+
+article {
+    max-width: 800px; /* Impede que o texto fique largo demais em telas grandes */
+    width: 100%;
+}
+
+/* Exemplo de uso de Aside responsivo */
+aside {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 5px solid var(--cor-principal);
+    font-style: italic;
+}
+
+footer {
+    height: 50px;
+    background-color: var(--cor-principal);
+    color: var(--cor-texto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Usei a variável de sombra com o espalhamento que você aprendeu */
+    box-shadow: 0px -2px 10px var(--cor-sombra); 
+}
