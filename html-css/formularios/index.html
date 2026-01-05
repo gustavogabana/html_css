@@ -15,15 +15,42 @@
     <form action="#" method="post">
         <p>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" required>
+            <input type="text" name="nome" id="nome" required placeholder="Nome">
         </p>
         <p>
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome" required>
+            <input type="text" name="sobrenome" id="sobrenome" required placeholder="Sobrenome">
         </p>
         <p>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha" required>
+            <input type="password" name="senha" id="senha" required placeholder="Digite a senha">
+        </p>
+        <p>
+            <label for="media">Media:</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.5">
+        </p>
+        <p>
+            <label for="mes">Mês:</label>
+            <input type="month" name="mes" id="mes">
+        </p>
+        <p>
+            <label for="dia">Dia:</label>
+            <input type="date" name="dia" id="dia">
+        </p>
+        <p>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="teste@email.com">
+        </p>
+        <fieldset>
+            <legend>Sexo:</legend>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="masc">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sexo" id="fem">
+        </fieldset>
+        <p>
+            <label for="arquivo">Arquivo:</label>
+            <input type="file" name="arquivo" id="arquivo">
         </p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
