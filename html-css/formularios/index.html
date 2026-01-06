@@ -52,6 +52,25 @@
             <label for="arquivo">Arquivo:</label>
             <input type="file" name="arquivo" id="arquivo">
         </p>
+        <p>
+            <label for="sul">Estados do Sul</label>
+            <select name="estado" id="sul">
+                <optgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="datalist">Datalist</label>
+            <input type="text" name="datalist" id="datalist" list="dls">
+            <datalist id="dls">
+                <option value="data1">Data 1</option>
+                <option value="data2">Data 2</option>
+                <option value="data3">Data 3</option>
+            </datalist>
+        </p>
         <input type="submit" value="Enviar">
         <input type="reset" value="Limpar">
     </form>
