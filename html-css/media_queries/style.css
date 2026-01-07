@@ -16,4 +16,6 @@ html {
 body {
     margin: 100px;
     background-color: rgb(165, 222, 255);
+    /*background-repeat: no-repeat;
+    background-size: contain;*/
 }
