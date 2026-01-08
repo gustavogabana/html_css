@@ -95,3 +95,13 @@ Text align mexe no fluxo do texto, enquanto o display flex mexe na estrutura da 
     align-items: center;            /* Centraliza na vertical */
 }
 ```
+
+### Eixos
+
+Main axis é de cima pra baixo, Cross Axis é da esquerda para direita, na configuração de display:flex normal (flex-direction: row;).
+
+Na configuração reverse-row, inverte o main axis espelhado, o cross mantém.
+
+No flex-direction: column;, o mais axis se torna vertical, de cima para baixo, e o cross-axis se torna horizontal, da esquerda para direita.
+
+No reverse-column, inverte o main axis espelhado.
