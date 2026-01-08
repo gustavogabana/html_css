@@ -83,3 +83,15 @@ Text align mexe no fluxo do texto, enquanto o display flex mexe na estrutura da 
     transition: width 0.3s; /* Animação suave na mudança */
 }
 ```
+
+## FlexBox
+
+É focado em um eixo por vez (vertizal ou horizontal). Ideal para alinhar itens dentro de um container.
+
+ ```css
+ .menu {
+    display: flex;
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center;            /* Centraliza na vertical */
+}
+```
