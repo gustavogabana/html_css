@@ -25,10 +25,12 @@ div.container {
 div.item {
     background-color: lightblue;
     border: 1px solid black;
-    /*flex: auto;*/
     text-align: center;
     padding: 10px;
     /*align-self: flex-end;*/ /*Faz apenas um elemento se alinhar em relação ao container pai*/
     /*flex-basis: 100px;*/
     flex: 0 1 100px; /*grow shrink flex-basis*/
+    /*flex: initial = flex: 0 1 auto*/
+    /*flex: none; = 0 0 auto*/
+    /*flex: auto; = 1 1 auto*/
 }
