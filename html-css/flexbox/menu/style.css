@@ -35,6 +35,7 @@ header {
 
 header > h1 {
     flex: 0 0 200px;
+    text-shadow: var(--cor-sombra);
 }
 
 header > nav {
@@ -62,4 +63,20 @@ header > nav > a:hover {
 
 main {
     padding: var(--padding-padrao);
+}
+
+@media screen and (max-width: 580px) {
+    
+    header, header > nav {
+        flex-flow: column wrap;
+    }
+
+    header > h1 {
+        flex-basis: 50px;
+    }
+
+    header > nav > a {
+        width: 90vw;
+    }
+
 }
