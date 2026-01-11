@@ -15,12 +15,14 @@ main.container {
     grid-template-columns: auto auto auto;
     grid-template-rows: repeat(3, auto);
     gap: 15px;
+
     /*alinhamento de items*/
-    align-items: normal; /*vertical*/
-    justify-items: normal; /*horizontal*/
+    place-items: normal normal;
+
     /*alinhamento do conteudo inteiro*/
-    align-content: space-evenly;
-    justify-content: stretch;
+    place-content: space-evenly stretch;
+
+
 }
 
 div.item {
