@@ -13,8 +13,14 @@ main.container {
     display: grid;
     height: 250px;
     grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
     gap: 15px;
+    /*alinhamento de items*/
+    align-items: normal; /*vertical*/
+    justify-items: normal; /*horizontal*/
+    /*alinhamento do conteudo inteiro*/
+    align-content: space-evenly;
+    justify-content: stretch;
 }
 
 div.item {
