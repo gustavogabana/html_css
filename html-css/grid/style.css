@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main.container {
+    border: 3px solid blue;
+    margin: 10px;
+    display: grid;
+    height: 250px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+}
+
+div.item {
+    border: 1px solid red;
+}
