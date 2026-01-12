@@ -25,7 +25,7 @@ body {
 header {
   background-color: var(--destaque);
   color: var(--texto-inverso);
-  padding: 10px;
+  padding: 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -41,11 +41,65 @@ nav#menu a {
   text-decoration: none;
   color: var(--texto-inverso);
   padding: 12px 15px;
-  border-radius: 5px;
+  /* border-radius: 6px; */
   transition: background-color 0.5s, color 0.5s;
 }
 
 nav#menu a:hover {
-  background-color: var(--destaque-inverso);
-  color: var(--texto);
+  background-color: white;
+  color: var(--destaque);
+  border: 1px solid var(--destaque);
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+}
+
+section#ficha {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  border-radius: 5px;
+  grid-column: 2;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+section#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+section#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4em;
+  gap: 2em;
+  margin-top: 15px;
+}
+
+div#social a {
+  text-decoration: none;
+  color: var(--destaque);
+  transition: color 0.5s;
+}
+
+div#social a:hover {
+  color: var(--destaque-inverso);
 }
