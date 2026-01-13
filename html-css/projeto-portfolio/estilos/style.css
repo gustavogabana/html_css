@@ -232,6 +232,13 @@ article h2 {
   border-radius: 8px;
 }
 
+footer {
+  background-color: var(--destaque);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
 @media screen and (min-width: 768px) {
   
   #skill-container {
